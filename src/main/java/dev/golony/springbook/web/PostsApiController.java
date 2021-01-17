@@ -5,6 +5,7 @@ import dev.golony.springbook.web.dto.PostsResponseDto;
 import dev.golony.springbook.web.dto.PostsSaveRequestDto;
 import dev.golony.springbook.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
