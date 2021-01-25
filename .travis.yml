@@ -12,9 +12,6 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-before_install:
-  - chomod +x gradlew
-
 script: "./gradlew clean build"
 
 before_deploy:
@@ -33,9 +30,3 @@ deploy:
     acl: private
     local_dir: deploy
     wait-until-deployed: true
-
-# CI 완료시 이메일 알림
-#notifications:
-#  email:
-#    recipients:
-#      - ab6449@gmail.com
