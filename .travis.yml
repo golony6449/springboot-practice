@@ -40,7 +40,7 @@ deploy:
     bucket: springboot-bucket-golony
     key: springboot.zip
     bundle_type: zip
-    application: springboot
-    deployment_group: springboot-group
+    application: springboot-codedeploy
+    deployment_group: springboot-deploy-group
     region: ap-northeast-2
     wait-until-deployed: true
